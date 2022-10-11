@@ -5,71 +5,133 @@
         <title>Facts on Pac-Man</title>
         <link rel="icon" href="images/favicon.ico" type="image/gif"/>
         <style>
-            body {background-color: gold;}
-            h1,h2,h3 {display: block;
-                border: 2px solid tomato;
-                padding: 5px;
-                }
-                h1{margin-left:auto;
-                margin-right:auto;
-                text-align:center}
-            p {display:block;
+            body {
+                background-color:darkorange;
             }
-            img{display:inline;
-                object-fit:contain}
+            h1,h2,h3 {
+                display: block;
+                padding: 5px;
+                border: 2px solid tomato;
+                font-family: monospace;
+                color: chocolate;
+                width: 250px;
+                border-radius: 10px
+            }
+            h1 {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                font-family: monospace;
+                color: chocolate;
+                border: 2px solid tomato;
+                background-color: gold;
+            }
+            p {
+                font-family: monospace;
+                color: chocolate;
+            }
+            .gallery-text {
+                width: 190px;
+                font-size: 14px;
+                text-align: center;
+                font-family: monospace;
+                color: aliceblue
+            }
+            .gallery-image{
+                display: inline;
+                width: 200px;
+                height: 200px;
+                object-fit: cover
+            }
             #gallery-container{
-                display:inline-block;
+                display: inline-block;
+                font-size: 0
             }
             .image-container{
-                display:inline-block;
+                display: inline-block;
                 vertical-align: top;
+                margin-left: 150px;
             }
-            .center{display:block;
-                width:25%;
-                height:25%;
-                margin-left:auto;
-                margin-right:auto;
+            .center{
+                display: block;
+                width: 25%;
+                height: 25%;
+                margin-left: auto;
+                margin-right: auto;
             }
             .left-align{
-                margin-left:  5px;
-                margin-right:auto
+                margin-left: 5px;
+                margin-right: auto
+            }
+            #special-word{
+                color: maroon;
+            }
+            #main-body{
+                margin-left: 50px;
+                margin-right: 50px;
+                border: 4px solid tomato;
+                border-radius: 20px;
+                padding: 25px;
+                background-color: gold;
+            }
+            #top-body{
+                margin-bottom: 35px
             }
         </style> 
     </head>
+
     <body>
-    <div>
-        <h1 class="center">5 <strong>Interesting</strong> facts on Pac-Man!</bdo></h1>
-            <img src="images/pacmanFigurine.jpg" alt="A Picture of a Pac-Man Amiibo" class="center">
-        <h3 class="left-align">1. Pac-Man's Original Name</h3>
-            <img src="images/Bandai Namco logo.jpg" width="200" height="150" alt="Bandai Namco logo">
-        <p class="left-align">Pac-Man's <emp>original</emp> name was <mark>"Puck Man"</mark> but was later changed because people at Namco were worried that vandals would change the "P" into and "F", enabling a much <sub>less</sub> wholesome name.</p>        
-        <h3 class="left-align">2.</h3>
-        <p></p>        
-        <h3 class="left-align">3.</h3>
-        <p></p>        
-        <h3 class="left-align">4. All Time High Score</h3>
-            <img src="images/Billy Mitchell.jpg" alt="A Picture of the record breaker Billy Mitchell" width="150" Height="200">  
-        <p class="left-align">The highest score you can get on an original Pac-Man arcade machine is <emp>3,333,360</emp>. The first recorded and verified person to get this perfect score was <abbr title="Billy Mitchell"> BM</abbr> </p>
-        <h3 class="left-align">5.</h3>
-        
-    </div>
-    <div id="gallery-container">
-        <div class="image-container">
-            <img src="images/Billy Mitchell.jpg" alt="A Picture of the record breaker Billy Mitchell" width="150" Height="200">
-            <p>A picture of the record broker Billy Mitchell.</p>  
+
+    
+
+        <div id="top-body">
+
+            <h1 class="center">5 Interesting facts on Pac-Man!</h1>
+                <img src="images/pacmanFigurine.jpg" alt="A Picture of a Pac-Man Amiibo" class="center">
         </div>
-        <div class="image-container">
-            <img src="images/Bandai Namco logo.jpg" width="200" height="150" alt="Bandai Namco logo">
-            <p>Bandai Namco Logo.</p>
+
+        <div id="main-body">
+            <h3 id="box" class="left-align">1. Pac-Man's Original Name</h3>
+                <img src="images/Bandai Namco logo.jpg" width="200" height="150" alt="Bandai Namco logo">
+                <p>Pac-Man's <emp>original</emp> name was <span id="special-word">"Puck Man"</span> but was later changed because people at Namco were worried that vandals would change the "P" into and "F", enabling a much <sub>less</sub> wholesome name.</p>        
+            
+            <h3 class="left-align">2.</h3>
+                <p></p>
+                    
+            <h3 class="left-align">3.</h3>
+                <p></p>       
+            
+            <h3 class="left-align">4. All Time High Score</h3>
+                <img src="images/Billy Mitchell.jpg" alt="A Picture of the record breaker Billy Mitchell" width="150" Height="200">  
+                <p class="left-align">The highest score you can get on an original Pac-Man arcade machine is <span id="special-word">3,333,360</span>. The first recorded and verified person to get this perfect score was <abbr title="Billy Mitchell"> BM</abbr> </p>
+            
+            <h3 class="left-align">5.</h3>
+                <p></p>
         </div>
-        <div class="image-container">
-            <a href="https://www.youtube.com/watch?v=TKdqJoaIBBM" target="_blank" title="for smash ultimate fans">
-            <img src="images/pacmanFigurine.jpg" alt="A Picture of a Pac-Man Amiibo" style="width:300px;height:200px">
-            </a> 
-            <p>A picture of a Pac-Man Amiiboo</p>
+
+        <div id="gallery-container">
+
+            <div class="image-container">
+                <img src="images/Billy Mitchell.jpg" alt="A Picture of the record breaker Billy Mitchell" class="gallery-image">
+                <p class="gallery-text">A picture of the record broker Billy Mitchell.</p>  
+            </div>
+
+            <div class="image-container">
+                <img src="images/Bandai Namco logo.jpg" alt="Bandai Namco logo" class="gallery-image">
+                <p class="gallery-text">Bandai Namco Logo.</p>
+            </div>
+
+            <div class="image-container">
+                <a href="https://www.youtube.com/watch?v=TKdqJoaIBBM" target="_blank" title="for smash ultimate fans">
+                <img src="images/pacmanFigurine.jpg" alt="A Picture of a Pac-Man Amiibo" class="gallery-image">
+                </a> 
+                <p class="gallery-text">A picture of a Pac-Man Amiiboo</p>
+            </div>
         </div>
     </div>          
     </body>
     <hr>
+    <div>
     <a href="https://github.com/Kasdein/simplehtml/blob/main/README.md" style="text-decoration:none" target="_blank" title="link to the GitHub page">the github page</a>
+    </div>
 </html>
